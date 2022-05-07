@@ -1,0 +1,102 @@
+{
+    "common": {
+        "name": "autobahn",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "autobahn",
+        "titleLang": {
+            "en": "autobahn",
+            "de": "Autobahn",
+            "ru": "автобан",
+            "pt": "autoestrada",
+            "nl": "autobaan",
+            "fr": "autoroute",
+            "it": "autostrada",
+            "es": "autopista",
+            "pl": "autostrada",
+            "zh-cn": "高速公路"
+        },
+        "desc": {
+            "en": "Information on construction sites, traffic jams, charging stations and webcams.",
+            "de": "Informationen zu Baustellen, Staus, Ladestationen und Webcams.",
+            "ru": "Информация о стройках, пробках, зарядных станциях и веб-камерах.",
+            "pt": "Informações sobre canteiros de obras, engarrafamentos, estações de carregamento e webcams.",
+            "nl": "Informatie over bouwplaatsen, files, laadpalen en webcams.",
+            "fr": "Informations sur les chantiers, les embouteillages, les bornes de recharge et les webcams.",
+            "it": "Informazioni su cantieri, ingorghi, colonnine di ricarica e webcam.",
+            "es": "Información sobre obras de construcción, atascos de tráfico, estaciones de carga y cámaras web.",
+            "pl": "Informacje o budowach, korkach, stacjach ładowania i kamerach internetowych.",
+            "zh-cn": "有关建筑工地、交通拥堵、充电站和网络摄像头的信息。"
+        },
+        "authors": [
+            "Joerg <joerg1979@email.de>"
+        ],
+        "keywords": [
+            "sites",
+            "traccic",
+            "jams",
+            "charging stations",
+            "webcams"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "autobahn.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/tigerjoerg/ioBroker.autobahn/master/admin/autobahn.png",
+        "readme": "https://github.com/tigerjoerg/ioBroker.autobahn/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "vehicle",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
