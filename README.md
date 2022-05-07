@@ -14,7 +14,7 @@
 ## autobahn adapter for ioBroker
 
 Information on construction sites, traffic jams, charging stations and webcams.
-
+1
 ## Changelog
 <!--
     Placeholder for the next version (at the beginning of the line):
